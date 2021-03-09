@@ -13,7 +13,7 @@ class SightingsController < ApplicationController
             :location => {:only => [:latitude, :longitude]}
           }, :except => [:updated_at])
       else
-        render json: { message: 'No sighting found with that id' }
+        render json: { message: 'no sighting found with that id' }
       end
     end
 
